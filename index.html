@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexaria | New Game</title>
+  <link rel="stylesheet" href="style/global.css">
+  <link rel="icon" href="favicon.ico" sizes="any" type="image/x-icon">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <section id="welcome">
+    <form id="new-game" action="game/">
+      <h1 id="title">&#x2b21; Hexaria</h1>
+      <div>
+        <label for="player-1">Player 1</label>
+        <input type="text" name="player_1" id="player-1" required>
+      </div>
+      <div onclick="togglePlayer2()">
+        <label>Play with</label>
+        <input type="radio" name="against_bot" id="against-player" value="0" checked>
+        <label for="against-player">Player (Offline)</label>
+        <input type="radio" name="against_bot" id="against-bot" value="1">
+        <label for="against-bot">Bot</label>
+      </div>
+      <div>
+        <label for="player-2">Player 2</label>
+        <input type="text" name="player_2" id="player-2" required>
+      </div>
+      <div class="hidden">
+        <label for="bot-level">Bot Difficulty</label>
+        <select name="bot_level" id="bot-level" required disabled>
+          <option value="easy">Easy</option>
+        </select>
+      </div>
+      <div>
+        <label for="duration">Match Duration</label>
+        <select name="disabled_tiles" id="duration" required>
+          <option value="30">Short (30 Disabled Tiles)</option>
+          <option value="14">Medium (14 Disabled Tiles)</option>
+          <option value="6">Long (6 Disabled Tiles)</option>
+          <option value="0">Full (0 Disabled Tiles)</option>
+        </select>
+      </div>
+      <button id="new-game-btn" disabled style="--color: green">New Game</button>
+      <p>&copy; <a href="https://github.com/raihankr">Raihan Khairul Rochman</a> 2025</p>
+    </form>
+
+    <div id="instruction">
+      <h2>Instruction</h2>
+      <ol>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non, vitae aperiam cum ducimus, deleniti
+          unde id sit velit fugit molestias consectetur qui! Saepe quibusdam inventore suscipit qui odio odit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non, vitae aperiam cum ducimus, deleniti
+          unde id sit velit fugit molestias consectetur qui! Saepe quibusdam inventore suscipit qui odio odit.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime non, vitae aperiam cum ducimus, deleniti
+          unde id sit velit fugit molestias consectetur qui! Saepe quibusdam inventore suscipit qui odio odit.</li>
+      </ol>
+    </div>
+  </section>
+
+  <script src="script/index.js"></script>
+</body>
+
+</html>

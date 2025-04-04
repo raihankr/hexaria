@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hexaria | Game</title>
+  <link rel="stylesheet" href="../style/global.css">
+  <link rel="shortcut icon" href="../favicon.ico" sizes="any">
+  <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+</head>
+
+<body>
+  <main class="flex-col">
+    <header>
+      <h1 id="title">&#x2b22; Hexaria</h1>
+    </header>
+    <section id="dashboard">
+      <div id="game-container">
+        <div id="game">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p><b>Current:</b> <span id="current" class="hexa" data-color="empty">x</span></p>
+        <div id="player-info">
+          <div>
+            <span class="hexa" data-color="red"></span> <span id="player-1-name">Player 1</span>
+            <br> <br>
+            <b id="score-1">0</b>
+          </div>
+          <div>
+            <span class="hexa" data-color="blue"></span> <span id="player-2-name">Player 2</span>
+            <br> <br>
+            <b id="score-2">0</b>
+          </div>
+        </div>
+      </div>
+      <div id="menu">
+        <button class="black-text" style="--color: white" onclick="location.assign('../index.html')">New Game</button>
+        <h2>History</h2>
+        <div id="history">
+          <div class="history-item">
+            <div>
+              <span>Han</span>
+              <span>200</span>
+            </div>
+            vs
+            <div>
+              <span>B</span>
+              <span>100</span>
+            </div>
+          </div>
+          <div class="history-item">
+            <div>
+              <span>Han</span>
+              <span>200</span>
+            </div>
+            vs
+            <div>
+              <span>B</span>
+              <span>100</span>
+            </div>
+          </div>
+        </div>
+        <button class="black-text" style="--color: white">See All</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="game-over">
+    <div><span id="winner">{Player}</span> win the match with <span id="winner-pts">{Points}</span> points!</div>
+    <div>
+      <button class="black-text" style="--color: white" onclick="location.reload()">
+        Play Again</button>
+      <button class="black-text" style="--color: white" onclick="slideUpFadeOut($game_over)">
+        Close</button>
+    </div>
+  </div>
+
+  <script src="../script/game.js"></script>
+</body>
+
+</html>
