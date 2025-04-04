@@ -187,6 +187,11 @@ label[for=bot-level] {
   }
 }
 
+#welcome {
+  display: flex;
+  flex-direction: column;
+}
+
 #welcome>* {
   height: 100vh;
   text-align: center;

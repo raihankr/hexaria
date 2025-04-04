@@ -325,8 +325,23 @@ let params = new URLSearchParams(location.search);
 
 newGame(Object.fromEntries(params));
 
+let $history = document.querySelector('#history');
+
 let history = JSON.parse(localStorage.getItem('history'));
 history = history.slice(-5);
-// for (let item of history) {
-  
-// }
+for (let item of history) {
+  $history.innerHTML +=
+  `
+  <div class="history-item">
+    <div>
+      <span>${item.player_1.name}</span>
+      <span>${item.player_1.score}</span>
+    </div>
+    vs
+    <div>
+      <span>${item.player_2.name}</span>
+      <span>${item.player_2.score}</span>
+    </div>
+  </div>
+  `;
+}

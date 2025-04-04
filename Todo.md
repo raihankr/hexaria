@@ -1,4 +1,4 @@
-[ ] Show the game icon as a favicon. 
+[x] Show the game icon as a favicon. 
 [x] Welcome screen should show when the page is loaded. 
 [x] Game instruction should appear besides the welcome screen. 
 [ ] The game instruction should appear in an animated way. 
@@ -30,8 +30,8 @@
 [x] The current score of the red and blue player should be shown on the screen. 
 [x] When there is no empty hexagon left, the game is over. 
 [x] When the game is over, show a popup to display the name, score of the winner, and the restart button. 
-[ ] Score will be saved and displayed in the leaderboard and see the details of the player’s game by clicking the details button. 
-[ ] Scores data should persist in the browser. 
+[x] Score will be saved and displayed in the leaderboard and see the details of the player’s game by clicking the details button. 
+[x] Scores data should persist in the browser. 
 [ ] Players can sort the leaderboard by the winner score or by the date in descending order. 
-[ ] The game should be working correctly in Google Chrome and Mozilla Firefox by opening the index.html file directly. 
-[ ] The game should work without JavaScript errors and messages shown in the browser console 
+[x] The game should be working correctly in Google Chrome and Mozilla Firefox by opening the index.html file directly. 
+[x] The game should work without JavaScript errors and messages shown in the browser console 
