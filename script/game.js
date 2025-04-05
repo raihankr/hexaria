@@ -112,6 +112,8 @@
       let row = parseInt(this.getAttribute('data-row'));
       let col = parseInt(this.getAttribute('data-col'));
 
+      new Audio('../audio/click.mp3').play();
+
       this.setPoints(this.innerText);
 
       let $adjacent_tiles = getAdjacentTiles(row, col);
