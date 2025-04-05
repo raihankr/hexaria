@@ -307,18 +307,6 @@
     return score + hexa_points;
   }
 
-  function slideDownFadeIn(el) {
-    el.classList.remove('slide-up-fade-out');
-    el.offsetWidth;
-    el.classList.add('slide-down-fade-in');
-  }
-
-  function slideUpFadeOut(el) {
-    el.classList.remove('slide-down-fade-in');
-    el.offsetWidth;
-    el.classList.add('slide-up-fade-out');
-  }
-
   function wait(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
   }
@@ -349,3 +337,15 @@
   `;
   }
 })();
+
+function slideDownFadeIn(el) {
+  el.classList.remove('slide-up-fade-out');
+  el.offsetWidth;
+  el.classList.add('slide-down-fade-in');
+}
+
+function slideUpFadeOut(el) {
+  el.classList.remove('slide-down-fade-in');
+  el.offsetWidth;
+  el.classList.add('slide-up-fade-out');
+}
